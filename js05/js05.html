@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS05</title>
+	<script>
+		// function getMail(val) {
+		// 	alert(val);
+		// }
+		// function deleteMail() {
+		// 	var mail = document.frm.mail.value='';
+		// }
+		
+		function mayTinh(pt) {
+			var kq = document.frm.kq.value;
+			var st1 = parseFloat(document.frm.st1.value);
+			var st2 = parseFloat(document.frm.st2.value);
+			switch(pt) {
+				case '+': kq = st1 + st2; break;
+				case '-': kq = st1 - st2; break;
+				case 'x': kq = st1 * st2; break;
+				case '/': kq = st1 / st2; break;
+
+				case 'Sqrt': kq = Math.sqrt(kq); break;
+				case 'Abs': kq = Math.abs(kq); break;
+				case 'Ceil': kq = Math.round(kq); break;
+			}
+			document.frm.kq.value = kq;
+		}
+	</script>
+</head>
+<body style="text-align: center; font-size: 33px">
+	<form action="" method="post" name="frm" accept-charset="utf-8">
+		<input type="text" name="st1" value="" placeholder="Số thứ 1"> <br>
+		<input type="text" name="st2" value="" placeholder="Số thứ 2"> <br>
+		<input type="button" name="sbm" value="+" onclick="mayTinh(this.value)">
+		<input type="button" name="sbm" value="-" onclick="mayTinh(this.value)">
+		<input type="button" name="sbm" value="x"onclick="mayTinh(this.value)">
+		<input type="button" name="sbm" value="/"onclick="mayTinh(this.value)">
+		<br>
+		<input type="button" name="sbm" value="Sqrt" onclick="mayTinh(this.value)">
+		<input type="button" name="sbm" value="Abs" onclick="mayTinh(this.value)">
+		<input type="button" name="sbm" value="Ceil" onclick="mayTinh(this.value)"><br>
+		<input type="text" name="kq" value="">
+
+	</form>
+</body>
+</html>

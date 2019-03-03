@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buoi 3 js ham va mang</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Mảng: là một dạng biến đặc biệt, lưu trữ các giá trị liên quan đến nhau
+		// VD: bài viết (tên, thời gian, nội dung, hình ảnh, bình luận...)
+		//  Sản phẩm (mã sp, tên, giá, image, ...)
+		// Cú pháp khai báo mảng:
+		// C1. Cách đầy đủ
+		// var  mang = new Array();
+		//  Khai báo giá trị trong mảng
+		// key: số gnuyeen bắt đầu từ 0 tăng dần đều
+		// mang[key]=giatri;
+
+		// Mảng liên tục
+		var conNguoi=new Array();
+		conNguoi[0]="Nguyễn Văn An";
+		conNguoi[1]=28;
+		conNguoi[2]="Hà Nội";
+		conNguoi[3]="Nam";
+		conNguoi[6]="ahihi";
+		// Bài Tập: sử dụng vòng lặp for để liệt kê tất cả các phần tử của mảng
+		for (var i = 0; i < 7; i++) {
+			document.write(conNguoi[i] + "; ");
+		}
+		// Bài Tập: sử dụng vòng lặp for để đếm được các phần tử của mảng
+		for (var i = 0, tong=0; i < 7; i++) {
+			tong++;
+		}
+		document.write(tong);
+		// tong = tenMang.length
+
+		// C2. Rút gọn cách 1
+		// var danhMuc=new Array(0=>"Sony",1=>"SamSung",2=>"LG");
+		// cách này key tăng tự động
+		// var danhMuc=new Array(0=>"Sony","SamSung","LG");
+		// document.write(danhMuc[0]);
+
+		// Mảng kết hợp: key là chuỗi
+		// var conNguoi=new Array();
+		// conNguoi['ten']="Nguyễn Văn An";
+		// conNguoi['tuoi']=28;
+		// conNguoi['diachi']="Hà Nội";
+		// conNguoi['sex']="Nam";
+
+		// Xuất mảng ra màn hình
+		// document.write(conNguoi[2]);
+		// document.write(conNguoi['ten']);
+		// C3. Cách khai báo ngắn nhất
+		var sanPham=[
+			"Nguyễn Văn An",
+			28,
+			"Hà Nội"
+		];
+		// document.write(sanPham[0]);
+
+		// vòng lặp duyệt mảng for in
+		for (x in conNguoi) {
+			document.write(conNguoi[x]+"; ");
+		}
+
+		
+	</script>
+</body>
+</html>

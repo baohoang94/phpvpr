@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body onresize="resizePage();">
+	<!-- onload cho thẻ img -->
+	<img src="http://hinhanhdepvip.com/wp-content/uploads/2016/08/anh-che-hai-huoc-luc-thi-cu-1.jpg" alt="" onload="loadImg();">
+
+	<!-- Sự kiện là các thao tác với chuột trên website
+		- các dạng sự kiện
+		+ các dạng sự kiện dùng cho thẻ body (all văn bản html): onload(khi load trang xong), onresize 
+		+ các dạng sự kiện toàn thẻ html: onclick, ondbclick, onmouseover, onmouseleave
+		+ các dạng sự kiện dùng cho form: onblur, onfocus, onchange, onkeyup, onkeydow
+		cú pháp viết sự kiện
+		tensukien="function();"
+	 -->
+	 <!-- các dạng sự kiện dùng cho form: onblur, onfocus, onchange, onkeyup, onkeydow -->
+	 <form action="" method="get" accept-charset="utf-8">
+	 	Tên:
+	 	<input type="text" name="" value="" placeholder="" onchange="changeForm();">
+	 </form>
+	 <script>
+	 	function hello() {
+	 		alert('Xin chào các you');
+	 	}
+	 	// function loadImg() {
+	 	// 	alert('Ảnh đã đc lòad');
+	 	// }
+	 	function resizePage() {
+	 		alert("Cấm thay đổi kích thước trình duyệt");
+	 	}
+	 	function focusForm() {
+	 		alert('Bạn phải nhập vòa ô này');
+	 	}
+	 	function blurForm() {
+	 		alert('Bạn đang ở ngoài ô này');
+	 	}
+	 	function changeForm() {
+	 		alert('Bạn đã thay đổi ô này');
+	 	}
+	 </script>
+	 <button type="submit" onmouseover="hello();">Click</button>
+	 <!-- cú pháp viết css thay đổi thuộc tính css với lệnh js
+	 	+ this: con trỏ
+	 	this.style.thuoctinhcss="giatricss"
+	 	 -->
+	 	 <p onclick="this.style.background='pink'">Hello</p>
+
+	 <style>
+	 	#demo {
+	 		width: 300px;
+	 		height: 200px;
+	 		background-color: pink;
+	 	}
+	 </style>
+	 <div id="demo" onmouseover="this.style.background='yellow'" onmouseleave="this.style.background='pink'"></div>
+	 <!-- Bài tập select option -->
+	 <form action="" method="get" accept-charset="utf-8">
+	 	<select name="" onchange="changeForm()">
+	 		<option value="1">1</option>
+	 		<option value="2">2</option>
+	 	</select>
+	 </form>
+	 <script>
+	 	
+	 </script>
+</body>
+</html>

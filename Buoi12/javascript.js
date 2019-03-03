@@ -1,0 +1,12 @@
+document.writeln('<h1 style="color:red">Ahihi</h1>');
+document.write('Sin trao ');
+console.log('chao xin');
+// alert('Hom nay co j hot ko?');
+var name = prompt('Enter your name: ');
+// name = 'Ahihi';
+var a =5;
+var b = 8;
+var c = b%a;
+var bool = false;
+document.write('<h1 style="color:red">Ahihi</h1>'+name);
+console.log(bool);

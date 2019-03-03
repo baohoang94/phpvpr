@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jqr 2</title>
+	<script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function() {
+			$('#but').click(function() {
+				$('ul').children().eq(2).css({'border':'1px solid red'});
+			});
+		});
+	</script>
+	<input type="text" name="txt" value="vpr.ed.vn" placeholder="">
+	<p>Vietpro âcdemy </p>
+	<p>Hoc vien cong nghe vietpro</p>
+	<ul>
+		<li><a href="#" title="">Home</a></li>
+		<li><a href="#" title="">About</a></li>
+		<li><a href="#" title="">Blog</a></li>
+		<li><a href="#" title="">Contact</a></li>
+	</ul>
+	<button id="but">Action</button>
+</body>
+</html>

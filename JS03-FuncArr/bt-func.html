@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ham tinh pt b2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// vieets wngs dungj tinhs nghieemj cuar ptb2 1 ẩn
+		// Ax2 + Bx + C = 0
+		// b1: xác định tham số
+		// b2: các trường hợp xảy ra của bài toán
+		// b3: delta=b*b-4*a*c
+		// delta = 0 => 2nghiem
+		// delta < 0 => vo nghiem
+		// delta = 0 => nghiem kep
+		function ptb2(a,b,c) {
+			var delta = b*b-4*a*c;
+			if (delta > 0) {
+				var x1 = -b+Math.sqrt(delta)/2*a;
+				var x2 = -b-Math.sqrt(delta)/2*a;
+				document.write('X1 = '+x1 " , x2= "+x2);
+			}
+			if (delta == 0) {
+				
+			}
+		}
+	</script>
+</body>
+</html>
